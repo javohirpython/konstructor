@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-u&*&(7deb&3#xmy&y**t%k@o(@c$rkj#p&_q3(+wl4+8b1c32n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["konstructor.librarynetbuilder.uz", ".vercel.app", '127.0.0.1']
+ALLOWED_HOSTS = ["konstructor.librarynetbuilder.uz", "konstructor.onrender.com", '127.0.0.1']
 
 
 
@@ -90,8 +90,10 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse("postgres://javohir:w1ZcEv1CYxgf9St59LKeH1SnGVRsPUDh@dpg-ck9d4hv0vg2c73efjedg-a.frankfurt-postgres.render.com/konstructor")
-
+DATABASES = {
+    'default': 
+    dj_database_url.parse("postgres://javohir:w1ZcEv1CYxgf9St59LKeH1SnGVRsPUDh@dpg-ck9d4hv0vg2c73efjedg-a.frankfurt-postgres.render.com/konstructor")
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
