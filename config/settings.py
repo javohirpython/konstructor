@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-u&*&(7deb&3#xmy&y**t%k@o(@c$rkj#p&_q3(+wl4+8b1c32n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["konstructor.librarynetbuilder.uz", "konstructor.onrender.com", '127.0.0.1']
+ALLOWED_HOSTS = ["konstructor.librarynetbuilder.uz", '161.35.212.228', '127.0.0.1']
 
 
 
@@ -72,28 +72,25 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'konstructor',
-#         'USER': 'javohir',
-#         'PASSWORD': 'Javohir2003',
-#         'HOST': 'localhost', 
-#         'PORT': '5432',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'konstructor',
+        'USER': 'javohir',
+        'PASSWORD': 'Javohir2003',
+        'HOST': 'localhost', 
+        'PORT': '5432',
     }
 }
 
-DATABASES = {
-    'default': 
-    dj_database_url.parse("postgres://javohir:w1ZcEv1CYxgf9St59LKeH1SnGVRsPUDh@dpg-ck9d4hv0vg2c73efjedg-a.frankfurt-postgres.render.com/konstructor")
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
